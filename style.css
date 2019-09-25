@@ -4,17 +4,27 @@ body{
   background: url("bg.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
+ 
+  height: 100%;
 }
+.sec1{
+  position: relative;
+ height: 100vh;
+}
+
 .box{
-  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  width: 30em;
   background: rgba(0, 0, 0, 0.4);
   padding: 40px;
   text-align: center;
-  margin: auto;
-  margin-top: 5%;
   color: white;
   font-family: 'Century Gothic',sans-serif;
+  transition: .5s;
 }
 .box-img{
   border-radius: 50%;
@@ -25,6 +35,7 @@ body{
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
+  transition: .5s;
 }
 .box h5{
   font-size: 20px;
@@ -51,4 +62,16 @@ ul{
 }
 .box li a:hover{
   color: #b9b9b9;
+}
+
+
+@media screen and (max-width: 576px) {
+  .box {
+    width: 20em;
+    transition: .5s;
+  }
+
+  .box h1{
+  font-size: 30px;
+  }  
 }
