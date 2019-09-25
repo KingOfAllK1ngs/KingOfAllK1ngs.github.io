@@ -75,3 +75,13 @@ body{
   font-size: 30px;
   }  
 }
+
+.wht {
+  color:grey;
+}
+
+.text-slicer {
+  background:rgb(0,255,140);
+  height: 2.5px;
+  width: 12em;
+}
