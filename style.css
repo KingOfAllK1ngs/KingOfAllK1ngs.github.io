@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 body{
   margin: 0;
   padding: 0;
@@ -7,9 +9,14 @@ body{
  
   height: 100%;
 }
+@font-face {
+  font-family: "Befolk";
+  src: url("font/Befolk Script.ttf") format("truetype"), url("font/Befolk Script.otf") format("opentype");
+}
+
 .sec1{
   position: relative;
- height: 100vh;
+ min-height: 100vh;
 }
 
 .box{
@@ -31,17 +38,30 @@ body{
   width: 200px;
   height: 200px;
 }
-.box h1{
+.box h1 {
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
   transition: .5s;
 }
+
+h1.aroly {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+}
+
+
+
 .box h5{
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 3px;
   font-weight: 100;
 }
+
+.web-designer {
+  font-family: 'Raleway', sans-serif;
+}
+
 .box p{
   text-align: justify;
 }
@@ -74,9 +94,14 @@ body{
   .box h1{
   font-size: 30px;
   }  
+
+  .box h5 {
+    font-size: 20px;
+  }
 }
 
 .wht {
+  font-size: 10pt;
   color:grey;
 }
 
