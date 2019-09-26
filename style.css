@@ -1,22 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
 body{
   margin: 0;
   padding: 0;
-  background: url("bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
- 
   height: 100%;
 }
-@font-face {
-  font-family: "Befolk";
-  src: url("font/Befolk Script.ttf") format("truetype"), url("font/Befolk Script.otf") format("opentype");
+.navbar-brand {
+  font-family: "Raleway", cursive;  
 }
 
 .sec1{
   position: relative;
- min-height: 100vh;
+  height: 100vh;
+  min-height: 100vh;
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 1%, 100% 90%, 50% 100%, 0 90%);
+}
+
+.sec2 {
+	height:100%;
+}
+
+.row {
+	margin-right:0px;
+	margin-left:0px;
 }
 
 .box{
@@ -26,33 +35,44 @@ body{
   margin-right: 50%;
   transform: translate(-50%, -50%);
   width: 30em;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
+  
+  padding: 30px;
   text-align: center;
   color: white;
   font-family: 'Century Gothic',sans-serif;
   transition: .5s;
 }
+
 .box-img{
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-.box h1 {
-  font-size: 40px;
+.box h1{
+  font-size: 50px;
   letter-spacing: 4px;
-  font-weight: 100;
+  font-weight: 100px;
   transition: .5s;
 }
 
-h1.aroly {
+
+.aroly {
   font-family: "Raleway", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
 }
 
+.wht {
+  font-size: 10pt;
+  color:grey;
+}
 
-
+.text-slicer {
+  background:rgb(0,255,140);
+  height: 2.5px;
+  width: 12em;
+}
 .box h5{
+  font-size: 20px;
   font-size: 25px;
   letter-spacing: 3px;
   font-weight: 100;
@@ -62,10 +82,16 @@ h1.aroly {
   font-family: 'Raleway', sans-serif;
 }
 
+
 .box p{
   text-align: justify;
 }
 .social-menu {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
   margin: 0;
   padding: 0;
 }
@@ -80,7 +106,7 @@ h1.aroly {
   font-size: 60px;
   transition: all ease-in-out 250ms;
 }
-.box li a:hover{
+.box li a:hover {
   color: #b9b9b9;
 }
 
@@ -94,19 +120,35 @@ h1.aroly {
   .box h1{
   font-size: 30px;
   }  
-
-  .box h5 {
-    font-size: 20px;
-  }
 }
 
-.wht {
-  font-size: 10pt;
-  color:grey;
+.navbar {
+	position: fixed;
+	width:100%;
+	z-index:99999;
 }
 
-.text-slicer {
-  background:rgb(0,255,140);
-  height: 2.5px;
-  width: 12em;
+.btn-outline-success {
+	color:rgb(0,255,140);
+	border-color:rgb(0,255,140);
 }
+
+.btn-outline-success:hover {
+	background:rgb(0,255,140);
+}
+
+.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.vidosik.p-4.order-1.order-sm-1.order-md-2.order-lg-2.order-xl-2 {
+	height: 100%
+}
+.myframe {
+  width:100%;
+	min-height:35vh;
+	max-height:60vh;
+}
+
+.main-text {
+	font-family:"Raleway", sans-serif;
+	font-size:40px;
+	font-weight: bold;
+}
+
