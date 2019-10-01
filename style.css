@@ -172,6 +172,15 @@ ul{
   color:#000000;
 }
 
+.black-line {
+  background: lightgray;
+  height: 1px;
+  min-width: 80%;
+  max-width: 90%;
+  border: none;
+}
+
+
 .social_footer_ul { 
   display:table; 
   margin:15px auto 0 auto;
