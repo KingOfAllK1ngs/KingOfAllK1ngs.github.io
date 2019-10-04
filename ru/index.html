@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -11,6 +11,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="scroll.js"></script>
 
     <title>Personal WebSite</title>
   </head>
@@ -26,33 +30,31 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#item1">Главная <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Контакты</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="#item2">Ссылка</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Disabled</a>
+        <a class="nav-link" href="#item3">Ссылка</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#item4">Ссылка</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#item5">Связь</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-globe"></i> Languages
+          <i class="fas fa-globe"></i> Язык
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="../ru/">Russian</a>
+          <a class="dropdown-item" href="../ru/">Русский</a>
           <a class="dropdown-item" href="../en/">English</a>
           </div>
       </li>
@@ -62,7 +64,7 @@
   </header>
 
 
- <section class="sec1"> <!--SECTION 1-->
+ <section class="sec1" id="item1"> <!--SECTION 1-->
 
 
 
@@ -107,7 +109,7 @@
 </div>
 
 
-<section class="sec2"> 
+<section class="sec2" id="item2"> 
 	<div class="row justify-content-center align-items-center"> 
 		<h1 class="col-12 text-center main-text p-4 aroly">В РАЗРАБОТКЕ</h1>
 
@@ -116,7 +118,7 @@
 		</div>
 		
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 vidosik p-4 order-1 order-sm-1 order-md-2 order-lg-2 order-xl-2"> 
-			<iframe class="myframe" src="https://www.youtube.com/embed/NsILast0F30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class="myframe" src="https://www.youtube.com/embed/NsILast0F30" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tx p-4 order-2 order-sm-2 order-md-1 order-lg-1 order-xl-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -129,8 +131,7 @@
 	</div>
 </section>
 
-<section>
-  <section class="sec3">
+  <section class="sec3" id="item3">
     <div class="row justify-content-center align-items-center">
       <h1 class="col-12 text-center main-text p-4 aroly">Обо мне</h1>
 
@@ -139,19 +140,16 @@
     </div>
 
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <img class="custom-img mb-3" src="images/myphoto.jpg">
+      <img class="custom-img mb-3" src="images/myphoto.jpg" alt="Дениска">
       
     </div>
 
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-justify text-sm-justify text-md-center text-lg-center 
     text-xl-center mb-3">
-    <h1 class="text-center d-block w-100 rus"></h1>
+    <h1 class="text-center d-block w-100 rus">Денис Тухто</h1>
     <br>
       <p class="text-center">Здравствуйте! Меня зовут <strong>Денис</strong> и мне 17 лет. Я студент экономического факультета. По завершении четырехлетней программы бакалавриата открою свою компанию. Я очень амбициозен и целеустремленный, буду изо всех сил строить успешную карьеру. В свободное время я занимаюсь изучением языков программирования, больше внимания уделяю языку html, так как мне очень нравится веб-дизайн.
 Если у Вас есть какие-то вопросы, можете мне их задать по ссылкам внизу сайта.</p>  
-<br>
-<br>
-<h1 class="text-center d-block w-100 eng"></h1>
 <br>
 <br>
       </div>
@@ -160,7 +158,7 @@
 
 </section>
 
-<section class="sec4">
+<section class="sec4" id="item4">
 
   <div class="row justify-content-center align-items-center">
      <h1 class="col-12 text-center main-text p-4 aroly">Отзывы (В РАЗРАБОТКЕ)</h1> 
@@ -194,33 +192,30 @@
   </div>
 </section>
 
-<footer>
+<footer id="item5">
 <!--<div class="social-menu row justify-content-center align-items-center">
 			<li class="ml-2"><a href="https://www.facebook.com/profile.php?id=100010132726613" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
 			<li class="ml-2"><a href="https://www.instagram.com/student_kei/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 			<li class="ml-2"><a href="mailto:de4ik18@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
 			<li class="ml-2"><a href="https://t.me/Denis_Tukhto" target="_blank"><i class="fab fa-telegram"></i></a></li>
 			<p class="text-center wht mt-3">&copy; denistuhto 2019 | Designed up by Denis Tuhto</p>
-	</div>-->
-</footer>		
+	</div>-->  
+  <div class="d-block mx-auto col-12">
+  <hr class="text-slicer black-line">
+  <p class="text-center wht mt-3">&copy;  Copyright 2019 | Designed up by Denis Tuhto</p>
+  <ul class="social_footer_ul">
+  <li><a href="https://www.facebook.com/profile.php?id=100010132726613" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="https://www.instagram.com/student_kei/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+  <li><a href="https://t.me/Denis_Tukhto" target="_blank"><i class="fab fa-telegram"></i></a></li>
+  <li><a href="mailto:de4ik18@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+</div>
+</footer>		    
 
-  
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</div>
-      <div class="d-block mx-auto col-12">
-        <hr class="text-slicer black-line">
-        <p class="text-center wht mt-3">&copy;  Copyright 2019 | Designed up by Denis Tuhto</p>
-        <ul class="social_footer_ul">
-        <li><a href="https://www.facebook.com/profile.php?id=100010132726613" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="https://www.instagram.com/student_kei/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://t.me/Denis_Tukhto" target="_blank"><i class="fab fa-telegram"></i></a></li>
-        <li><a href="mailto:de4ik18@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-      </ul>
-</div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </body>
 </html>
