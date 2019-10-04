@@ -180,6 +180,28 @@ ul{
   border: none;
 }
 
+.card {
+  border:none!important;
+}
+
+
+.circled {
+  width: 10em;
+  border-radius: 50%;
+}
+
+.short-btn {
+  width: 9em;
+}
+
+.gfgvf {
+  height: 80vh;
+}
+
+.modal {
+  border: none;
+  padding: 0px!important;
+}
 
 .social_footer_ul { 
   display:table; 

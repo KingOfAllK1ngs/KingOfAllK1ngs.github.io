@@ -29,7 +29,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://denistuhto.cf/businesscard/">Контакты</a>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Контакты</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -46,6 +46,17 @@
         <a class="nav-link" href="#">Disabled</a>
       </li>
     </ul>
+    <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-globe"></i> Languages
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Russian</a>
+          <a class="dropdown-item" href="#">English</a>
+          </div>
+      </li>
+    </ul>  
   </div>
 </nav>
   </header>
@@ -72,6 +83,28 @@
 		
 
 </section>               <!--SECTION 1-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <iframe src="https://denistuhto.cf/businesscard/" class="w-100 gfgvf" name="myIframe">
+      </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <section class="sec2"> 
@@ -111,10 +144,17 @@
     </div>
 
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-justify text-sm-justify text-md-center text-lg-center 
-    text-xl-center mb-3">RU
-      <br>Здравствуйте! Меня зовут <strong>Денис</strong> и мне 17 лет. Я живу в Казанке, но на данный момент в Кривом Роге. Я студент экономического факультета. Учусь на факультете финансов, учетов и информационных технологий. По завершении четырехлетней программы бакалавриата я планирую устроиться на работу. Я очень амбициозен и целеустремленный, буду изо всех сил строить успешную карьеру. В свободное время я занимаюсь изучением языков программирования, больше внимания уделяю языку html, так как мне очень нравится веб-дизайн.
-Если у Вас есть какие-то вопросы, можете мне их задать по ссылкам внизу сайта. <br><br>EN
-<br><br>Hi! My name is <strong>Denis</strong> and I am 17 years old. I live in Kazanka, but at the moment in Krivoy Rog. I am a student of the Faculty of Economics. I study at the faculty of finance, accounting and information technology. Upon completion of the four-year undergraduate program, I plan to get a job. I am very ambitious and purposeful, I will try my best to build a successful career. In my free time I study programming languages, I pay more attention to the html language, since I really like web design.
+    text-xl-center mb-3">
+    <!-- https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-1/p160x160/66902461_2420853458241256_32538156838420480_n.jpg?_nc_cat=105&_nc_oc=AQnrJsJSqG-vI6M-uItqp960x_mz-Wkd0Az5y6ivGO2xoXpcjfE2CIaLfvL_s0ZjvZ8&_nc_ht=scontent.fiev4-1.fna&oh=5df4861e9ec95adce75c98b6d3d6c2dd&oe=5DF370CA<h1 class="text-center d-block w-100 rus">RU</h1>
+    <br>
+      <p class="text-center">Здравствуйте! Меня зовут <strong>Денис</strong> и мне 17 лет. Я живу в Казанке, но на данный момент в Кривом Роге. Я студент экономического факультета. Учусь на факультете финансов, учетов и информационных технологий. По завершении четырехлетней программы бакалавриата я планирую устроиться на работу. Я очень амбициозен и целеустремленный, буду изо всех сил строить успешную карьеру. В свободное время я занимаюсь изучением языков программирования, больше внимания уделяю языку html, так как мне очень нравится веб-дизайн.
+Если у Вас есть какие-то вопросы, можете мне их задать по ссылкам внизу сайта.</p>  -->
+<br>
+<br>
+<h1 class="text-center d-block w-100 eng">EN</h1>
+<br>
+<br>
+ <p class="text-center">Hi! My name is <strong>Denis</strong> and I am 17 years old. I live in Kazanka, but at the moment in Krivoy Rog. I am a student of the Faculty of Economics. I study at the faculty of finance, accounting and information technology. Upon completion of the four-year undergraduate program, I plan to get a job. I am very ambitious and purposeful, I will try my best to build a successful career. In my free time I study programming languages, I pay more attention to the html language, since I really like web design.
 If you have any questions, you can ask them at the links at the bottom of the site.
       </div>
     
@@ -132,25 +172,25 @@ If you have any questions, you can ask them at the links at the bottom of the si
     </div>
 
     <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-1/p160x160/66902461_2420853458241256_32538156838420480_n.jpg?_nc_cat=105&_nc_oc=AQnrJsJSqG-vI6M-uItqp960x_mz-Wkd0Az5y6ivGO2xoXpcjfE2CIaLfvL_s0ZjvZ8&_nc_ht=scontent.fiev4-1.fna&oh=5df4861e9ec95adce75c98b6d3d6c2dd&oe=5DF370CA" class="card-img-top d-block mx-auto circled pt-3" alt="Gregory Kadaner">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title text-center">Card title</h5>
+    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary d-block mx-auto short-btn">Go somewhere</a>
   </div>
 </div><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-1/p160x160/66902461_2420853458241256_32538156838420480_n.jpg?_nc_cat=105&_nc_oc=AQnrJsJSqG-vI6M-uItqp960x_mz-Wkd0Az5y6ivGO2xoXpcjfE2CIaLfvL_s0ZjvZ8&_nc_ht=scontent.fiev4-1.fna&oh=5df4861e9ec95adce75c98b6d3d6c2dd&oe=5DF370CA" class="card-img-top d-block mx-auto circled pt-3" alt="Gregory Kadaner">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title text-center">Card title</h5>
+    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary d-block mx-auto short-btn">Go somewhere</a>
   </div>
 </div><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-1/p160x160/66902461_2420853458241256_32538156838420480_n.jpg?_nc_cat=105&_nc_oc=AQnrJsJSqG-vI6M-uItqp960x_mz-Wkd0Az5y6ivGO2xoXpcjfE2CIaLfvL_s0ZjvZ8&_nc_ht=scontent.fiev4-1.fna&oh=5df4861e9ec95adce75c98b6d3d6c2dd&oe=5DF370CA" class="card-img-top d-block mx-auto circled pt-3" alt="Gregory Kadaner">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title text-center">Card title</h5>
+    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary d-block mx-auto short-btn">Go somewhere</a>
   </div>
 </div>
   </div>
