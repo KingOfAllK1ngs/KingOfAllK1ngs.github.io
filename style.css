@@ -89,7 +89,15 @@ body {
 }
 
 .text-center {
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.text-center-zd {
+  font-size: 25px;
+}
+
+.load {
+  background: url('images/download.gif') no-repeat center;
 }
 
 .hobbi {
