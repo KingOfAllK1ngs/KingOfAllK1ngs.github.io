@@ -77,11 +77,10 @@
         <br>
         <p class="text-center-zd"><strong>Здравствуйте!</strong>
           <hr>
-          <p class="text-center">Меня зовут Денис и мне 17 лет. Я студент экономического
-            факультета. Я очень амбициозен и целеустремленный, буду изо всех сил строить успешную карьеру. В свободное
-            время я занимаюсь изучением языков
-            программирования, больше внимания уделяю языкам программирования, так как мне очень нравится веб-разработка.
-            Если у Вас есть какие-то вопросы, можете мне их задать по ссылкам внизу сайта.</p>
+          <p class="text-center">Меня зовут Денис и мне 18 лет. Я студент экономического
+            факультета. Я очень амбициозен и целеустремленный. В свободное
+            время я занимаюсь изучением веб-разработки, так как мне это очень нравится.
+            Так же Вы можете записаться ко мне на консультацию внизу сайта.</p>
         </p>
         <br>
         <br>
@@ -115,7 +114,7 @@
   <br>
   <br>
   <br>
-  <section class="sec4" id="item3">
+  <!-- <section class="sec4" id="item3">
     <div class="row justify-content-center align-items-center">
 
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-justify text-sm-justify text-md-center text-lg-center 
@@ -128,7 +127,56 @@
         <div class="load mx-auto" style="width:200px;height:200px"></div>
       </div>
 
+  </section> -->
+<hr class="text-slicer black-line">
+  <section class="sec5">
+    <iframe name="myframe" src="#" frameborder="0"></iframe>
+    <div id="shower">
+            <div>
+                <h3 class="text-submitted"><span class="green">Форма была</span> успешно отправлена!</h3>
+            </div>
+         </div>
+    <form class="myform" action="https://formspree.io/xwkrvjae" method="POST" target="myframe">
+  
+      <h2 class="formzag">Запишитесь на консультацию</h2>
+      <fieldset>
+        <legend>Введите Email<span>*</span></legend>
+        <input class="inppput" onkeyup="validateInputEmail();" type="email" name="Email" placeholder="viktorbell@gmail.com" required>
+      </fieldset>
+      <fieldset>
+        <legend>ФИО<span>*</span></legend>
+        <input class="inppput" onkeyup="validateInputFio();" type="text" name="ФИО" placeholder="Viktor Bell" required>
+      </fieldset>
+      <fieldset class="radiofield">
+        <legend>Тип сайта<span>*</span></legend>
+        <label for="website-vizitka">
+          <input value="Сайт-визитка" type="radio" name="Тип" id="website-vizitka"> Сайт-визитка
+        </label>
+        <label for="corporative-website">
+          <input value="Корпоративный сайт" type="radio" name="Тип" id="corporative-website"> Корпоративный сайт
+        </label>
+        <label for="promo-website">
+          <input value="Промо-сайт" type="radio" name="Тип" id="promo-website"> Промо-сайт
+        </label>
+        <label for="forum">
+          <input value="Форум" type="radio" name="Тип" id="forum"> Форум
+        </label>
+        <label for="another">
+          <input value="Другое" type="radio" name="Тип" id="another"> Другое
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Выберите дату<span>*</span></legend>
+        <input class="inppput" type="date" name="Дата" required>
+      </fieldset>
+      <fieldset>
+        <legend>Выберите время<span>*</span></legend>
+        <input class="inppput" type="time" name="Время" required>
+      </fieldset>
+      <button class="send" type="submit" onclick="hideshow();" disabled>Отправить</button>
+    </form>
   </section>
+  
 
 
   <footer id="item5">
