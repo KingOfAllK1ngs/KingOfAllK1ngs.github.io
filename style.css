@@ -236,17 +236,18 @@ ul {
 }
 
 /* Начало формы */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 * {
   font-family: "Montserrat", sans-serif !important;
 }
+
 iframe[name="myframe"] {
   display: none;
 }
 
 .unFilled {
   border-color: red;
-  background-color: lighten(red, 30%);
+  background-color: #ff9999;
 }
 
 .send {
@@ -262,7 +263,7 @@ iframe[name="myframe"] {
 }
 
 .inppput {
-  width: 420px
+  width: 400px
 }
 
 .myform {
@@ -271,62 +272,83 @@ iframe[name="myframe"] {
   box-shadow: 0 0 0 1px lightgray;
   padding: 15px;
   border-radius: 4px;
-  h2 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  fieldset {
-    border: 1px solid lightgray;
-    padding: 10px 10px 15px 10px;
-    border-radius: 4px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    &.unFilledField {
-      border-color: red;
-    }
-    input {
-      transition: 0.3s linear;
-    }
-    label {
-      display: block;
-      margin-top: 7px;
-      margin-bottom: 7px;
-    }
-  }
+}
+.myform h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.myform fieldset {
+  border: 1px solid lightgray;
+  padding: 10px 10px 15px 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.myform fieldset.unFilledField {
+  border-color: red;
+}
+.myform fieldset input {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.myform fieldset label {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 #shower {
-    display: none;
-    text-align: center;
-    max-width: 450px;
-  }
-  #shower i, #shower svg {
-    font-size: 50px;
-    color: green;
-    margin-bottom: 1.25rem;
-  }
-  #shower .text-submitted {
-    font-weight: bold;
-    font-size: 20px;
-    color: green;
-  }
+  display: none;
+  text-align: center;
+  max-width: 450px;
+}
 
-  @keyframes showwww {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+#shower i, #shower svg {
+  font-size: 50px;
+  color: green;
+  margin-bottom: 1.25rem;
+}
+
+#shower .text-submitted {
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+}
+
+@-webkit-keyframes showwww {
+  0% {
+    opacity: 0;
   }
-  @keyframes hiderrr {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  100% {
+    opacity: 1;
   }
+}
+
+@keyframes showwww {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hiderrr {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hiderrr {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* Конец формы */
 
 
