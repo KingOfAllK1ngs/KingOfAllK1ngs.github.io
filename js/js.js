@@ -7,11 +7,11 @@ let email = document.querySelector('input[type="email"]'),
   radiofield = document.querySelector(".radiofield"),
   myForm = document.querySelector('.myform'),
   shower = document.getElementById('shower');
-
-function unFilledField(a, b) {
+// Add class
+function unFilledField(a, b) {     
   a.classList.add(b);
-}
-
+} 
+// Add class
 function filledField(a, b) {
   a.classList.remove(b);
 }
@@ -42,6 +42,7 @@ function validateInputFio() {
     filledField(fio, "unFilled");
   }
 }
+
 radiofield.addEventListener("click", function () {
   unFilledField(radiofield, "unFilledField");
   for (let i = 0; i < radioButtons.length; i++) {
@@ -70,7 +71,7 @@ time.addEventListener("click", function () {
     }
   }, 100);
 });
-
+// Проверка полей каждые 200мс
 setInterval(function () {
   if (
     email.value == "" ||
@@ -89,7 +90,7 @@ setInterval(function () {
   } else {
     submit.removeAttribute("disabled", "disabled");
   }
-});
+},200);
 
 function hideshow() {
     myForm.style.cssText="animation:hierrr 1s 1 linear;display:none;";
